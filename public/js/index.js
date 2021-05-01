@@ -3,11 +3,11 @@ const socket = io();
 socket.on('connect', ()=>{
     console.log('Connectd to server');
 
-    socket.emit('createMessage', {
-        from : "Alex",
-        text : 'hi this side user',
-        createdAt : 124
-    });
+    // socket.emit('createMessage', {
+    //     from : "Alex",
+    //     text : 'hi this side user',
+    //     createdAt : 124
+    // });
 });//It's not on('connection'), but on('connect')
 
 socket.on('disconnect', () => {
