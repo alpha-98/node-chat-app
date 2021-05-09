@@ -2,6 +2,7 @@ const socket = io();
 
 socket.on('connect', ()=>{
     console.log('Connectd to server');
+    
 
     // socket.emit('createMessage', {
     //     from : "Alex",
